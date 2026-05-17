@@ -1,13 +1,14 @@
-name: workflow1
+name : workflow1
 on:
   push:
       branches:
-          -main
+      -main
 jobs:
     job1:
-        runs-on : ubuntu-lates
-        steps:
-          -name : checkout code
-           uses : actions/checkout@v2
-          -name : print message
-           run : echo "Welcome to Avd data ops class"
+      runs-on : ubuntu-lates
+      steps:
+      -name: checkout code
+      uses: actions/checkout@v2
+      -name: print message
+      run: echo "Welcome to Avd data ops class"
+ 
